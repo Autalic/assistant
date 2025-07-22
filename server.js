@@ -318,6 +318,9 @@ app.post('/api/process-command', async (req, res) => {
     });
   }
 });
+app.get('/', (req, res) => {
+  res.send('API is up and running!');
+});
 
 // Google OAuth routes
 app.get('/auth/google', (req, res) => {
