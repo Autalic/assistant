@@ -373,8 +373,4 @@ app.post('/api/elevenlabs-webhook', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  module.exports = app;
-  console.log(`Health check: http://localhost:${PORT}/health`);
-  console.log(`Google Auth: http://localhost:${PORT}/auth/google`);
-});
+module.exports = app;
